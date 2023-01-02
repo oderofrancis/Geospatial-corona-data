@@ -2,7 +2,7 @@
 
 ## Geopandas and Pandas
 
-To merge two dataframes using pandas, you can use the pd.merge() function. This function allows you to merge two dataframes by specifying columns in each dataframe as keys. For example:
+To merge two dataframes using pandas, you can use the ` pd.merge()` function. This function allows you to merge two dataframes by specifying columns in each dataframe as keys. For example:
 
 ```python
 
@@ -31,13 +31,13 @@ key   A   B   C   D
 3  K3  A3  B3  C3  D3
 ```
 
-You can specify different merge options using the how parameter. For example, you can use how='inner' to specify an inner join, how='left' for a left join, and how='right' for a right join.
+You can specify different merge options using the how parameter. For example, you can use `how='inner'` to specify an inner join, `how='left'` for a left join, and how='right' for a right join.
 
 You can also specify the columns to join on using the left_on and right_on parameters if the column names are different in each dataframe.
 
-Geopandas has a geopandas.GeoDataFrame.merge() function that is similar to the pd.merge() function in pandas. You can use this function to merge two geopandas dataframes by specifying columns in each dataframe as keys.
+Geopandas has a `geopandas.GeoDataFrame.merge()` function that is similar to the `pd.merge()` function in pandas. You can use this function to merge two geopandas dataframes by specifying columns in each dataframe as keys.
 
-Here is an example of how to use geopandas.GeoDataFrame.merge():
+Here is an example of how to use `geopandas.GeoDataFrame.merge()`:
 
 ```python
 import geopandas as gpd
@@ -50,7 +50,9 @@ df2 = gpd.read_file('data2.shp')
 result = df1.merge(df2, on='key')
 
 ```
-The geopandas.GeoDataFrame.merge() function has the same parameters as the pd.merge() function, such as how, left_on, and right_on, which allow you to specify different merge options and columns to join on.
+The `geopandas.GeoDataFrame.merge()` function has the same parameters as the `pd.merge()` function, such as how, l`eft_on,` and `right_on,` which allow you to specify different merge options and columns to join on.
+
+## How do you get geospatial data from a dataframe?
 
 What about you have a dataframe with geometry column and the other one doesn't have ?
 
