@@ -83,6 +83,6 @@ gdf = gpd.GeoDataFrame(result, geometry='geometry')
 
 ```
 
-n this example, we are using the Point geometry from the shapely library to create a geometry column in the dataframe. The apply() function is used to apply the Point function to each row in the dataframe, and the resulting Point objects are stored in the geometry column.
+n this example, we are using the Point geometry from the shapely library to create a geometry column in the dataframe. The `apply()` function is used to apply the Point function to each row in the dataframe, and the resulting Point objects are stored in the geometry column.
 
-Once the geometry column has been created, we can create a GeoDataFrame by passing the dataframe and the geometry column name to the gpd.GeoDataFrame() constructor.
+Once the geometry column has been created, we can create a GeoDataFrame by passing the dataframe and the geometry column name to the `gpd.GeoDataFrame()` constructor.
