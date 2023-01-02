@@ -2,6 +2,8 @@
 
 ## Geopandas and Pandas
 
+### Pandas
+
 To merge two dataframes using pandas, you can use the ` pd.merge()` function. This function allows you to merge two dataframes by specifying columns in each dataframe as keys. For example:
 
 ```python
@@ -34,6 +36,8 @@ key   A   B   C   D
 You can specify different merge options using the how parameter. For example, you can use `how='inner'` to specify an inner join, `how='left'` for a left join, and how='right' for a right join.
 
 You can also specify the columns to join on using the left_on and right_on parameters if the column names are different in each dataframe.
+
+### GeoPandas
 
 Geopandas has a `geopandas.GeoDataFrame.merge()` function that is similar to the `pd.merge()` function in pandas. You can use this function to merge two geopandas dataframes by specifying columns in each dataframe as keys.
 
