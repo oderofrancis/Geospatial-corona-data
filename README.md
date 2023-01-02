@@ -4,7 +4,7 @@
 
 To merge two dataframes using pandas, you can use the pd.merge() function. This function allows you to merge two dataframes by specifying columns in each dataframe as keys. For example:
 
-``
+`
 import pandas as pd
 
 df1 = pd.DataFrame({'key': ['K0', 'K1', 'K2', 'K3'],
@@ -18,7 +18,7 @@ df2 = pd.DataFrame({'key': ['K0', 'K1', 'K2', 'K3'],
 result = pd.merge(df1, df2, on='key')
 print(result)
 
-``
+`
 
 This would output the following dataframe:
 
