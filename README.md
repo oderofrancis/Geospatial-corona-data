@@ -1,3 +1,3 @@
-# Geospatial-corona-data
+# Geospatial Corona Data
 
-Geopandas and Pandas
+## Geopandas and Pandas
